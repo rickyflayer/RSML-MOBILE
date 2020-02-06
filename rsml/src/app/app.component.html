@@ -10,7 +10,10 @@
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appMenu"></ion-menu-toggle>
           <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-            <ion-label>{{p.title}}</ion-label>
+            <ion-label>About</ion-label>
+          </ion-item>
+          <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+            <ion-label>Karir</ion-label>
           </ion-item>
         </ion-list>
       </ion-content>
