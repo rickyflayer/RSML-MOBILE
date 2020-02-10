@@ -23,7 +23,11 @@ const routes: Routes = [
   {
     path: 'poli',
     loadChildren: () => import('./poli/poli.module').then( m => m.PoliPageModule)
+  },  {
+    path: 'jadwal',
+    loadChildren: () => import('./jadwal/jadwal.module').then( m => m.JadwalPageModule)
   },
+
 ];
 
 @NgModule({
