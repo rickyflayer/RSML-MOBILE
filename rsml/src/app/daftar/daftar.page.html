@@ -1,9 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>daftar</ion-title>
+    <ion-title>Daftar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-text> ada gak yh </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Nama Lengkap :</ion-label>
+      <ion-input class="ion-text-justify" type="name" placeholder="Masukan Nama"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Nomor Handphone :</ion-label>
+      <ion-input type="number" placeholder="Masukkan Nomor"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Jenis Kelamin</ion-label>
+      <ion-select name="gender" placeholder="Pilih Salah Satu">
+        <ion-select-option value="P">Perempuan</ion-select-option>
+        <ion-select-option value="L">Laki-Laki</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Alamat :</ion-label>
+      <ion-textarea name="address" placeholder="Masukkan Alamat"></ion-textarea>
+    </ion-item>
+  </ion-list>
 </ion-content>
