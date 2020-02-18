@@ -1,9 +1,58 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>daftar</ion-title>
+    <ion-title>Daftar Pasien</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-text> ada gak yh </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Nama Lengkap :</ion-label>
+      <ion-input class="ion-text-justify" type="name" placeholder="Masukan Nama" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Nomor Handphone :</ion-label>
+      <ion-input type="number" placeholder="Masukkan Nomor" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label color="primary">Jenis Kelamin</ion-label>
+      <ion-select name="gender" placeholder="Pilih Salah Satu" required>
+        <ion-select-option value="P">Perempuan</ion-select-option>
+        <ion-select-option value="L">Laki-Laki</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-list>    
+      <ion-item>
+        <ion-label color="primary">Poli</ion-label>
+        <ion-select cancelText="Tidak" okText="Ya" placeholder="Pilih Poli">
+          <ion-select-option value="umum">Umum</ion-select-option>
+          <ion-select-option value="gigi">Gigi</ion-select-option>
+          <ion-select-option value="fisioterapi">Fisioterapi</ion-select-option>
+          <ion-select-option value="radiologi">Radiologi</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>    
+      <ion-item>
+        <ion-label color="primary">Keluhan</ion-label>
+        <ion-select multiple="true" cancelText="Tidak" okText="Ya" placeholder="Pilih Keluhan">
+          <ion-select-option value="batuk">Batuk</ion-select-option>
+          <ion-select-option value="pilek">Pilek</ion-select-option>
+          <ion-select-option value="asma">Asma</ion-select-option>
+          <ion-select-option value="demam">Demam</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  
+    <ion-item>
+      <ion-label color="primary">Alamat :</ion-label>
+      <ion-textarea name="address" placeholder="Masukkan Alamat" required></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="presentAlertConfirm(); presentToast()">Daftar</ion-button>
 </ion-content>
