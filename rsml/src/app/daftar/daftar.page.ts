@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-daftar',
@@ -8,7 +9,8 @@ import { AlertController } from '@ionic/angular';
 })
 export class DaftarPage implements OnInit {
 
-  constructor(public alertController: AlertController) { }
+  constructor(public alertController: AlertController,
+    public toastController: ToastController) { }
 
   async presentAlertConfirm() {
     const alert = await this.alertController.create({
@@ -32,6 +34,14 @@ export class DaftarPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Data Anda Telah Terdaftar',
+      duration: 2000
+    });
+    toast.present();
   }
 
   ngOnInit() {
