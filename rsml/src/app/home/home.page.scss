@@ -23,3 +23,26 @@ page-home{
     }
   }
 
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+.show-background {
+  border-style: none;
+  background: var(--ion-color-primary);
+}
+
+.header-md::after {
+  background-image: none;
+}
+
+ion-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 90px 1px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
