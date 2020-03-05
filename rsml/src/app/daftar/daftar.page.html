@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
     <ion-title>Daftar Pasien</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,12 +10,12 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-label color="primary">Nama Lengkap :</ion-label>
+      <ion-label color="primary">Nama Lengkap : </ion-label>
       <ion-input class="ion-text-justify" type="name" placeholder="Masukan Nama" required></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label color="primary">Nomor Handphone :</ion-label>
+      <ion-label color="primary">Nomor Handphone : </ion-label>
       <ion-input type="number" placeholder="Masukkan Nomor" required></ion-input>
     </ion-item>
   
