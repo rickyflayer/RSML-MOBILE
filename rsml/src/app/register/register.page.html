@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <!-- <button ion-button menuToggle="left">
+			<ion-icon name="menu"></ion-icon>
+		</button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<!-- <form [formGroup]="userAuth" (ngSubmit)="register(userAuth)"> -->
+		<ion-grid>
+			<!-- <ion-row no-padding>
+				<ion-col text-center>
+					<img style="height: 300px; width:300px;" [src]="domSanitizer.bypassSecurityTrustUrl(profilePicSrc)" (click)="selectImage()">
+					<ion-badge class="intersect" color="primary" (click)="selectImage()">
+						<ion-icon name="camera" style="font-size: 3em; padding: 0.1em"></ion-icon>
+					</ion-badge>
+				</ion-col>
+			</ion-row> -->
+			<ion-row>
+				<ion-col no-padding>
+					<ion-item>
+						<ion-label color="dark" stacked>Full Name</ion-label>
+						<ion-input type="text" placeholder="John Doe Alamsyah" text-transform></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-3 no-padding>
+					<ion-item>
+						<ion-label color="dark" stacked>Code</ion-label>
+						<ion-select>
+							<ion-option value="+62">+62</ion-option>
+						</ion-select>
+					</ion-item>
+				</ion-col>
+				<ion-col col-9 no-padding>
+					<ion-item>
+						<ion-label color="dark" stacked>Phone Number</ion-label>
+						<ion-input type="text" placeholder="8123456789"></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col no-padding>
+					<ion-item>
+						<ion-label color="dark" stacked>Email</ion-label>
+						<ion-input type="email" placeholder="e.g. example@example.com"></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col no-padding>
+					<ion-item>
+						<ion-label color="dark" stacked>Password</ion-label>
+						<ion-input type="password" placeholder="e.g. 54y4Bok3k"></ion-input>
+					</ion-item>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+		<!-- <button ion-button full large type="submit" color="primary">Register</button> -->
+	<!-- </form> -->
+</ion-content>
