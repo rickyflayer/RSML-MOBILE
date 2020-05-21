@@ -3,3 +3,8 @@ ion-content.background{
     --background: url(../../assets/img/medic.jpg);
 
 }   
+
+.header::after {
+    background-image: none;
+  }
+  
